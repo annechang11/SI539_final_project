@@ -277,11 +277,11 @@ div ul li a:hover{
     display: none;
     position: absolute;
     background-color: #f6f6f6;
-    min-width: 100vh;
+    min-width: 80vh;
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
-    margin-left: 4vh;
+    margin-left: 30vh;
   }
   
   .dropdown-content a {
@@ -334,7 +334,7 @@ footer{
     padding-top: 5vh;
     /* padding-bottom: 5vh; */
     overflow: hidden;
-    /* max-height: 20vh; */
+    max-width: 40vh;
 }
 
 .personaltext{

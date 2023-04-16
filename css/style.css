@@ -1,0 +1,378 @@
+
+/* base */
+
+body{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 2.8vh;
+    padding: 3vh;
+    line-height: 1.5;
+    font-family: 'Inconsolata', serif;
+}
+
+p{
+    padding: 2vh 4vh 2vh 4vh;
+}
+
+.intro li{
+    padding-left: 4vh;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 12vh; 
+    font-weight: bold;
+    padding-left: 3vh;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 6.5vh;
+    padding: 3vh;
+    /* padding-top: 1vh;
+    padding-bottom: 1vh; */
+}    
+
+h3{
+    font-size: 4vh;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2vh;
+}
+
+/* nav bar */
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0vh 2vh 2vh 2vh;
+} 
+
+
+
+nav ul li a{
+    font-size: 2.8vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-weight:bold;
+    color: black;
+    font-family: 'Barlow', serif;
+}
+
+
+.active{
+    color: tomato;
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+/* all tomatoes */
+
+
+/* flex container */
+.container{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 98%; */
+    row-gap: 2vh;
+    column-gap: 1.5vh;
+    /* margin:auto; */
+    /* align-items: center; */
+    /* justify-content: left; */
+  }
+
+  .container div{
+    flex-basis: 22%;
+    margin:1vh 2vh;
+    border-style: dashed;
+    border-color: black;
+    border-width: 2px;
+    padding-right:2vh;
+    padding-left:2vh;
+  }
+
+
+.container div h3{
+  text-align: center;
+}
+
+
+/* .container div {
+    background-color: c;
+    } */
+
+.container div:hover {
+        background-color: rgb(248, 223, 218);
+    }
+
+    /* rgb(201, 216, 169) */
+
+div ul li a:hover{
+        color:blue;
+    }
+
+/* div ul li{
+        padding-bottom: 0.5vh;
+    } */
+
+/* .container div:nth-child(3n+2)  {
+    background-color: ;
+    } */
+
+/* .container .about:nth-child(2n+1)  {
+        background-color: rgba(47, 47, 117, 0.4);
+    } */
+    
+
+.container div img{
+    display: block;
+    width: auto;
+    max-height: 30vh;
+    /* border: 0.2vh solid darkgray; */
+    border-radius: 10%; 
+    padding: 2vh 1vh 2vh 1vh;
+    background-size: cover;
+    order:1;
+    margin: auto;
+    
+}
+
+
+/* filter */
+
+.container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    /* float: left; */
+    /* background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px; */
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+/* Style the buttons */
+
+#myBtnContainer{
+    display:grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 4vh;
+    /* margin:auto; */
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 3vh;
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: 'Inconsolata', serif;
+    margin:1vh;
+    text-transform: uppercase;
+  }
+  
+.btn:nth-child(1) {
+    background-color: dimgray;
+    color: white;
+} 
+/* 
+.btn:nth-child(2),.btn:nth-child(3) {
+    background-color: rgb(208, 243, 208);
+}  */
+
+  .btn:nth-child(4n) {
+    background-color: rgb(243, 185, 175);
+} 
+
+.btn:nth-child(5n)  {
+    background-color: rgba(81, 81, 165, 0.4);
+} 
+
+.btn:nth-child(6n)  {
+    background-color: rgb(243, 215, 163);
+} 
+
+  .btn:hover {
+    background-color: rgb(197, 79, 58);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  
+  /* .btn.active {
+    background-color: #666;
+    color: white;
+  } */
+
+  .btn:active {
+    background-color: #666;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .btn:visited {
+    background-color: #666;
+    color: white;
+    text-transform: uppercase;
+  }
+
+
+
+
+
+
+/* search bar */
+  
+#myInput {
+    /* background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat; */
+    width: 70%;
+    font-size: 3vh;
+    padding: 2vh 6vh 2vh 10vh;
+    border: 0.5vh solid rgb(246, 188, 178);
+    margin-bottom: 1vh;
+    margin-left: 4vh;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #f2bcbc;
+    color:black;
+    font-weight: bold;
+  }
+/* 
+  #myInput:focus {
+    outline: 3px solid #ddd;
+}
+   */
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 100vh;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    margin-left: 4vh;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 1.5vh;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {display: block;}
+
+
+
+
+/* Others */
+
+a.skip, a.tops, p a{
+    color:green;
+}
+
+div ul li a{
+    color:rgb(2, 115, 2);
+    /* font-weight: bold; */
+}
+
+
+.skip{
+    /* visibility: hidden; */
+    position: absolute; 
+    left: -30px;
+    top: -30px;
+}
+
+.skip:focus{
+    /* visibility: visible; */
+    position: relative; 
+    left: 2vh;
+    top: 1vh;
+    margin-bottom: 2vh;
+}
+
+footer{
+    margin-top: 5vh;
+    
+}
+
+.intro img{
+    display: inline-block;
+    margin: auto;
+    padding-top: 5vh;
+    /* padding-bottom: 5vh; */
+    overflow: hidden;
+    /* max-height: 20vh; */
+}
+
+.personaltext{
+    text-align: left;
+    padding-left: 10vh;
+}
+
+#caption{
+    text-align: center;
+    padding-left: 10vh;
+    padding-bottom: 7vh;
+    font-size: 2.4vh;
+}
+
+@media only screen and (min-width: 1024px){
+
+  #myBtnContainer{
+    display:grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 4vh;
+    margin:auto;
+    }
+
+    .intro, h1, .search, .filter h2, .filter p {
+        text-align: center;
+    }
+
+  }
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  
+    /*Turn off transition*/
+    body {
+    animation:none;
+    -webkit-transition: initial; /* sets to default setting */
+    transition: initial; /* sets to default setting */
+    }
+  }

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- connects to the stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- connect to a Google font -->  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+
+  <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/df078bb8d0.js" crossorigin="anonymous"></script>
+  <!-- connect to a favicon -->
+
+  
+  <title>Tomato Recommender</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+  <a tabindex="1" class="skip" href="#main">Skip to Main Content</a>
+  <header>
+    <nav>
+        <ul>
+          <li>&#x1F345<a class="active" href="index.html">Homepage</a></li>
+          <li><a href="resources.html">Gardening Guide</a></li>
+          <li><a href="personal.html">What did Anne grow?</a></li>
+        </ul>
+        
+    </nav>
+    <h1> Tomato Recommender </h1>
+  </header>
+
+  <main id="main">
+    <!-- <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March"> -->
+
+    <div class="intro">
+      <p>
+        Did you know? There are <a href="https://en.wikipedia.org/wiki/Tomato"> more than 6000 varieties of tomatoes</a>  in the world.
+        <br>
+        Find out the variety of tomatoes you'd like to grow!
+        <li><strong>Search: </strong>type the name of the tomato</li>
+        <li><strong>Filter: </strong>select the attributes of the tomato</li>
+      </p>
+      
+    </div>
+
+    <div class="search">
+    <div class='dropdown'>
+      <h2>Search for a tomato variety</h2>
+      <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search for tomatoes.." title="Type a tomato name">
+      <div id="myDropdown" class="dropdown-content">
+        <!-- <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search for tomatoes.." title="Type in a name"> -->
+
+        <ul id="myUL">
+          <li><a href="#cherokee">Cherokee Purple</a></li>
+          <li><a href="#kellogg">Kellogg Breakfast</a></li>
+          <li><a href="#blackkrim">Black Krim</a></li>
+          <li><a href="#sungold">Sungold</a></li>
+          <li><a href="#blackcherry">Black Cherry</a></li>
+          <li><a href="#brandywine">Brandywine</a></li>
+          <li><a href="#roma">Roma</a></li>
+          <li><a href="#celebrity">Celebrity</a></li>
+          <li><a href="#mexico">Mexico Midget</a></li>
+          <li><a href="#yellowpear">Yellow Pear</a></li>
+          <li><a href="#betterboy">Better Boy</a></li>
+          <li><a href="#beefsteak">Beefsteak</a></li>
+          <li><a href="#amana">Amana Orange</a></li>
+          <li><a href="#sunsugar">Sun Sugar</a></li>
+          <li><a href="#redcherry">Red Cherry</a></li>
+          <li><a href="#chocolate">Chocolate Cherry</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+      
+    
+    <div class='filter'>
+      <br>
+      <p> Don't know the tomato names? Try the filter ⬇ </p>
+      <br>
+      <br>
+      <h2>Filter attributes to find a tomato variety</h2>
+    
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> All tomatoes</button>
+        <button class="btn" onclick="filterSelection('small')"> Size: Small</button>
+        <button class="btn" onclick="filterSelection('large')"> Size: Large</button>
+        <button class="btn" onclick="filterSelection('red')"> Color: Red</button>
+        <button class="btn" onclick="filterSelection('purple')"> Color: Purple</button>
+        <button class="btn" onclick="filterSelection('orange')"> Color: Yellow</button>
+      </div>
+
+
+      <h2>Tomatoes</h2>
+
+      <div class="container">
+
+        <div class="filterDiv large purple" id="cherokee">
+          <h3>Cherokee Purple</h3>
+          <ul>
+            <li><i class="far fa-seedling"></i> Size: Large</li>
+            <li><i class="far fa-seedling"></i> Color: Purple/Black</li>
+            <li><i class="far fa-seedling"></i> Maturity days: 80-90</li>
+            <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/86894/Tomato-Solanum-lycopersicum-Cherokee-Purple/"> More information </a></li>
+          </ul>
+          <img src="images/cherokee_purple.jpg"  width="200" alt="Image of cherokee purple">
+          
+          </div>
+        
+          <div class="filterDiv large orange" id="kellogg">
+            <h3>Kellogg's Breakfast</h3>
+            <ul>
+              <li><i class="far fa-seedling"></i> Size: Large</li>
+              <li><i class="far fa-seedling"></i> Color: Orange/Yellow</li>
+              <li><i class="far fa-seedling"></i> Maturity days: 80-90</li>
+              <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/86906/Tomato-Solanum-lycopersicum-Kelloggs-Breakfast/"> More information </a></li>
+            </ul>
+            <img src="images/kelloggs_breakfast.jpg"  width="200" alt="Image of kelloggs breakfast">
+            
+            </div>
+
+          <div class="filterDiv large purple" id="blackkrim">
+            <h3>Black Krim</h3>
+            <ul>
+              <li><i class="far fa-seedling"></i> Size: Large</li>
+              <li><i class="far fa-seedling"></i> Color: Purple/Black</li>
+              <li><i class="far fa-seedling"></i> Maturity days: 80-90</li>
+              <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/120699/Tomato-Solanum-lycopersicum-Black-Krim/"> More information </a></li>
+            </ul>
+            <img src="images/black_krim.jpg"  width="200" alt="Image of Black Krim">
+            
+            </div>
+
+          <div class="filterDiv small orange" id="sungold">
+              <h3>Sungold</h3>
+              <ul>
+                <li><i class="far fa-seedling"></i> Size: Small</li>
+                <li><i class="far fa-seedling"></i> Color: Orange/Yellow</li>
+                <li><i class="far fa-seedling"></i> Maturity days: 50-60</li>
+                <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/111244/Tomato-Solanum-lycopersicum-Sungold/"> More information </a></li>
+              </ul>
+              <img src="images/sungold.jpg"  width="200" alt="Image of sungold">
+              
+              </div>
+
+          <div class="filterDiv purple small" id="blackcherry">
+                <h3>Black Cherry</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Purple/Black</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 50-60</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/136618/Tomato-Solanum-lycopersicum-Black-Cherry/"> More information </a></li>
+                </ul>
+                <img src="images/blackcherry.jpg"  width="200" alt="Image of Black Cherry">
+                
+              </div>
+          
+          <div class="filterDiv red large" id="brandywine">
+                <h3>Brandywine</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Large</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 90</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/91361/Tomato-Solanum-lycopersicum-Brandywine-Pink/"> More information </a></li>
+                </ul>
+                <img src="images/brandywine.jpg"  width="200" alt="Image of Brandywine">
+                
+              </div>
+
+          <div class="filterDiv red small" id="roma">
+                <h3>Roma</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/91634/Tomato-Solanum-lycopersicum-Roma/"> More information </a></li>
+                </ul>
+                <img src="images/roma.jpg"  width="200" alt="Image of Roma">
+                
+              </div>
+
+          <div class="filterDiv red small" id="celebrity">
+                <h3>Celebrity</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 60-70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/91360/Tomato-Solanum-lycopersicum-Celebrity/"> More information </a></li>
+                </ul>
+                <img src="images/celebrity.jpg"  width="200" alt="Image of Celebrity tomato">
+                
+              </div>
+          
+          <div class="filterDiv red small" id="mexico">
+                <h3>Mexico Midget</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 60-70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/151061/Cherry-Tomato-Solanum-lycopersicum-Mexico-Midget/"> More information </a></li>
+                </ul>
+                <img src="images/mexico.jpg"  width="200" alt="Image of Mexico Midget tomato">
+                
+              </div>
+
+          
+          <div class="filterDiv orange small" id="yellowpear">
+                <h3>Yellow Pear</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Orange/Yellow</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 60-70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/109188/Tomato-Solanum-lycopersicum-Yellow-Pear/"> More information </a></li>
+                </ul>
+                <img src="images/yellowpear.jpg"  width="200" alt="Image of Yellow Pear tomato">
+                
+              </div>
+
+          
+          <div class="filterDiv red large" id="betterboy">
+                <h3>Better Boy</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Large</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 80-90</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/112285/Tomato-Solanum-lycopersicum-Better-Boy/"> More information </a></li>
+                </ul>
+                <img src="images/betterboy.jpg"  width="200" alt="Image of Celebrity tomato">
+                
+              </div>
+
+          <div class="filterDiv red large" id="beefsteak">
+                <h3>Beefsteak</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Large</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 80-90</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/164045/Tomato-Solanum-lycopersicum-Beefsteak/"> More information </a></li>
+                </ul>
+                <img src="images/beefsteak.jpg"  width="200" alt="Image of Beefsteak tomato">
+                
+              </div>
+          
+          <div class="filterDiv orange large" id="amana">
+                <h3>Amana Orange</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Large</li>
+                  <li><i class="far fa-seedling"></i> Color: Orange/Yellow</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 80-90</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/92372/Tomato-Solanum-lycopersicum-Amana-Orange/"> More information </a></li>
+                </ul>
+                <img src="images/amana.jpg"  width="200" alt="Image of Amana Orange tomato">
+                
+              </div>
+          
+          <div class="filterDiv orange small" id="sunsugar">
+                <h3>Sun Sugar</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Orange/Yellow</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/592960/Tomato-Solanum-lycopersicum-SunSugar-F1/"> More information </a></li>
+                </ul>
+                <img src="images/sunsugar.jpg"  width="200" alt="Image of sunsugar tomato">
+                
+              </div>
+
+          <div class="filterDiv red small" id="redcherry">
+                <h3>Red Cherry</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Red</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 60-70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/149416/Cherry-Tomato-Solanum-lycopersicum-Red-Cherry/"> More information </a></li>
+                </ul>
+                <img src="images/redcherry.jpg"  width="200" alt="Image of redcherry tomato">
+                
+              </div>
+
+          <div class="filterDiv purple small" id="chocolate">
+                <h3>Chocolate Cherry</h3>
+                <ul>
+                  <li><i class="far fa-seedling"></i> Size: Small</li>
+                  <li><i class="far fa-seedling"></i> Color: Purple/Black</li>
+                  <li><i class="far fa-seedling"></i> Maturity days: 60-70</li>
+                  <li><i class="far fa-seedling"></i> <a href="https://garden.org/plants/view/551375/Tomato-Solanum-lycopersicum-Chocolate-Cherry/"> More information </a></li>
+                </ul>
+                <img src="images/chocolate.jpg"  width="200" alt="Image of Chocolate Cherry tomato">
+                
+              </div>
+
+        </div>
+      
+    </div>
+
+  </div>
+
+
+  </main>
+
+  <footer>  
+    <p class="thanks">
+        This Webpage is created by <strong>Anne Chang</strong> in April 2023 as SI 539 final project.
+        Images and data credit: <a href="https://garden.org/plants/">National Gardening Association</a>.
+        No use outside of SI 539 is allowed.
+      </p>
+      
+      <a href="#top" class="tops">Back to Top</a>
+  </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
